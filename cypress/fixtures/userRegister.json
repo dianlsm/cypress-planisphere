@@ -1,0 +1,137 @@
+{
+    "validUser": {
+      "email": "test@yopmail.com",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "Jl. Contoh No. 1",
+      "tel": "01133335551",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    },
+    "invalidEmail": {
+      "email": "test01@yopmail. ",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "Jl. Contoh No. 1",
+      "tel": "01133335552",
+      "gender": "1",
+      "birthday": "2025-10-02",
+      "notification": true
+    },
+    "takenEmailUser": {
+      "email": "clark@example.com",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "Jl. Contoh No. 1",
+      "tel": "01133335551",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    },
+    "requiredFields": {
+      "email": "test01@yopmail.com",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "",
+      "tel": "",
+      "gender": "",
+      "birthday": "",
+      "notification": true
+    },
+    "standartUser": {
+      "email": "test03@yopmail.com",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "normal",
+      "address": "Jl. Contoh No. 1",
+      "tel": "01133335551",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    },
+    "boxUnchecked": {
+      "email": "test04@yopmail.com",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "normal",
+      "address": "Jl. Contoh No. 1",
+      "tel": "01133335551",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": false
+    },
+    "emailEmpty": {
+      "email": "",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "normal",
+      "address": "Jl. Contoh No. 1",
+      "tel": "01133335551",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    },
+    "passwordLess": {
+      "email": "test@yopmail.com",
+      "password": "Pas123",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "Jl. Contoh No. 1",
+      "tel": "01133335551",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    },
+    "passwordEmpty": {
+      "email": "test@yopmail.com",
+      "password": "",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "Jl. Contoh No. 1",
+      "tel": "01133335551",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    },
+    "digitLess": {
+      "email": "test@yopmail.com",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "Jl. Contoh No. 1",
+      "tel": "0113333",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    },
+    "digitThan": {
+      "email": "test@yopmail.com",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "Jl. Contoh No. 1",
+      "tel": "0113333333333",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    },
+    "digitNonNumeric": {
+      "email": "test@yopmail.com",
+      "password": "Password123!",
+      "username": "Test User",
+      "plan": "premium",
+      "address": "Jl. Contoh No. 1",
+      "tel": "!0113333aaa",
+      "gender": "1",
+      "birthday": "2025-10-01",
+      "notification": true
+    }
+
+
+  }
+  

@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-01T06:52:07.278Z",
+    "end": "2025-10-01T06:52:16.036Z",
+    "duration": 8758,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3f6bea21-0afd-4f6b-9e63-1f01d2583260",
+      "title": "",
+      "fullFile": "cypress\\e2e\\signUp.cy.js",
+      "file": "cypress\\e2e\\signUp.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1cb89fc6-1bdd-489c-81a4-42141718c411",
+          "title": "Sign Up Flow",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should sign up with valid data",
+              "fullTitle": "Sign Up Flow should sign up with valid data",
+              "timedOut": null,
+              "duration": 3500,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "signup.fillForm(users.validUser);\nsignup.submit();\ncy.url().should('include', '/mypage.html');\ncy.contains(users.validUser.username).should('exist');",
+              "err": {},
+              "uuid": "ed1e29fc-5d64-40fe-b276-9137d918a507",
+              "parentUUID": "1cb89fc6-1bdd-489c-81a4-42141718c411",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show error for invalid email",
+              "fullTitle": "Sign Up Flow should show error for invalid email",
+              "timedOut": null,
+              "duration": 2580,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "signup.fillForm(users.invalidUser);\nsignup.submit();\ncy.contains('Please enter a non-empty email address.').should('exist');",
+              "err": {},
+              "uuid": "ac9ce274-40a0-4716-93ca-df24182ac013",
+              "parentUUID": "1cb89fc6-1bdd-489c-81a4-42141718c411",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show error for taken email",
+              "fullTitle": "Sign Up Flow should show error for taken email",
+              "timedOut": null,
+              "duration": 2589,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "signup.fillForm(users.takenEmailUser);\nsignup.submit();\ncy.contains('Email has already been taken.').should('exist');",
+              "err": {},
+              "uuid": "2c6b77e5-64df-4768-b9fe-e55317b7b1fe",
+              "parentUUID": "1cb89fc6-1bdd-489c-81a4-42141718c411",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed1e29fc-5d64-40fe-b276-9137d918a507",
+            "ac9ce274-40a0-4716-93ca-df24182ac013",
+            "2c6b77e5-64df-4768-b9fe-e55317b7b1fe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8669,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

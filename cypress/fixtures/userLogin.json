@@ -1,0 +1,41 @@
+{
+    "validUser": {
+      "email": "diana@example.com",
+      "password": "pass1234"
+    },
+    "invalidEmail": {
+      "email": "wrong@example.com",
+      "password": "pass1234"
+    },
+    "invalidPassword": {
+      "email": "diana@example.com",
+      "password": "wrongpass"
+    },
+    "invalidEmailPassword": {
+      "email": "wrong@example.com",
+      "password": "wrongpass"
+    },
+    "emailEmpty": {
+      "email": "",
+      "password": "pass1234"
+    },
+    "passwordEmpty": {
+      "email": "",
+      "password": "pass1234"
+    },
+    "invalidFormatEmail": {
+      "email": "diana @example.com",
+      "password": "pass1234"
+    },
+    "emailCaseSensitive": {
+      "email": "DIANA@EXAMPLE.COM",
+      "password": "pass1234"
+    },
+    "passwordSpace": {
+      "email": "diana@example.com",
+      "password": "pass 1234"
+    }
+
+  }
+  
+  

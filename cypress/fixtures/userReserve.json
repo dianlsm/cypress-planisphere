@@ -1,0 +1,60 @@
+{
+    "validReservation": {
+        "checkin": "12/09/2025",
+        "stay": "1",
+        "guest" : "1",
+        "additional" : "Breakfast",
+        "name" : "Dian",
+        "confirmation" : "None",
+        "request" : "Dummy test"
+    },
+    "requiredReservation": {
+        "checkin": "11/09/2025",
+        "stay": "1",
+        "guest" : "1",
+        "additional" : "",
+        "name" : "Dian",
+        "confirmation" : "None",
+        "request" : ""
+    },
+    "stayZero": {
+        "checkin": "11/09/2025",
+        "stay": "0",
+        "guest" : "0",
+        "additional" : "Breakfast",
+        "name" : "Dian",
+        "confirmation" : "None",
+        "request" : "Dummy test"
+    },
+    "stayTen": {
+        "checkin": "11/09/2025",
+        "stay": "10",
+        "guest" : "1",
+        "additional" : "Breakfast",
+        "name" : "Dian",
+        "confirmation" : "None",
+        "request" : "Dummy test"
+    },
+    "confirmationEmail": {
+        "checkin": "11/09/2025",
+        "stay": "1",
+        "guest" : "1",
+        "additional" : "Breakfast",
+        "name" : "Dian",
+        "confirmation" : "By email",
+        "email" : "dummy@yopmail.com",
+        "request" : "Dummy test"
+    },
+    "allPlans": {
+        "checkin": "11/09/2025",
+        "stay": "1",
+        "guest" : "1",
+        "additional" : ["Breakfast", "Early check-in", "Sightseeing"],
+        "name" : "Dian",
+        "confirmation" : "None",
+        "request" : "Dummy test"
+    }
+
+  }
+  
+  
