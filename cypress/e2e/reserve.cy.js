@@ -46,7 +46,7 @@ describe('Reserve Flow', () => {
       reservePage.btnClose()
       
       cy.contains('Confirm Reservation').should('be.visible')
-      cy.contains('Total $80.00 (included taxes)').should('be.visible')
+      cy.contains('Total $97.50 (included taxes)').should('be.visible')
       cy.contains('h5.modal-title', 'Thank you for reserving.').should('be.visible')
       cy.get('div.modal-body').should('contain.text', 'We look forward to visiting you.')
     });
@@ -74,12 +74,12 @@ describe('Reserve Flow', () => {
       reservePage.btnClose()
 
       cy.contains('Confirm Reservation').should('be.visible')
-      cy.contains('Total $97.50 (included taxes)').should('be.visible')
+      cy.contains('Total $80.00 (included taxes)').should('be.visible')
       cy.contains('h5.modal-title', 'Thank you for reserving.').should('be.visible')
       cy.get('div.modal-body').should('contain.text', 'We look forward to visiting you.')
     });
 
-    it.only('Successful Reservation with all additional plans', () => {
+    it('Successful Reservation with all additional plans', () => {
       reservePage.reserveRoom()
       reservePage.fillReserve(userReserve.allPlans)
       reservePage.confirmReservation()
@@ -88,7 +88,7 @@ describe('Reserve Flow', () => {
       reservePage.btnClose()
 
       cy.contains('Confirm Reservation').should('be.visible')
-      cy.contains('Total $100.00 (included taxes)').should('be.visible')
+      cy.contains('Total $117.50 (included taxes)').should('be.visible')
       cy.contains('h5.modal-title', 'Thank you for reserving.').should('be.visible')
       cy.get('div.modal-body').should('contain.text', 'We look forward to visiting you.')
     });

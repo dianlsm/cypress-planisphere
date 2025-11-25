@@ -23,15 +23,21 @@ class ReservePage {
       })
     }
 
-    fillCheckIn(checkin){
-      cy.get('#date').clear().type(checkin)
-      cy.get('.ui-datepicker-close').click()
+    fillCheckIn(checkin) {
+      cy.get('#date').clear().type(checkin);
     }
+    
+
+    // fillStay(stay){
+    //   cy.get('#term').clear().type(stay)
+    // }
 
     fillStay(stay){
-      cy.get('#term').clear().type(stay)
+      cy.get('body').click(0,0);   // tutup popup datepicker
+      cy.get('#term').clear().type(stay);
     }
-
+    
+    
     fillGuests(guest) {
       cy.get('#head-count').clear().type(guest);
     }

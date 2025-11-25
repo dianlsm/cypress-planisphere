@@ -1,6 +1,6 @@
 {
     "validReservation": {
-        "checkin": "12/09/2025",
+        "checkin": "01/10/2026",
         "stay": "1",
         "guest" : "1",
         "additional" : "Breakfast",
@@ -9,7 +9,7 @@
         "request" : "Dummy test"
     },
     "requiredReservation": {
-        "checkin": "11/09/2025",
+        "checkin": "11/30/2025",
         "stay": "1",
         "guest" : "1",
         "additional" : "",
@@ -36,17 +36,17 @@
         "request" : "Dummy test"
     },
     "confirmationEmail": {
-        "checkin": "11/09/2025",
+        "checkin": "12/10/2025",
         "stay": "1",
         "guest" : "1",
         "additional" : "Breakfast",
         "name" : "Dian",
-        "confirmation" : "By email",
+        "confirmation" : "email",
         "email" : "dummy@yopmail.com",
         "request" : "Dummy test"
     },
     "allPlans": {
-        "checkin": "11/09/2025",
+        "checkin": "11/30/2025",
         "stay": "1",
         "guest" : "1",
         "additional" : ["Breakfast", "Early check-in", "Sightseeing"],
